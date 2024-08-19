@@ -6,6 +6,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://bobpulaski.github.io",
-  base: "/opb158",
+  base: "/",
   integrations: [mdx(), sitemap()],
 });
