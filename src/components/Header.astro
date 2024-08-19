@@ -1,0 +1,80 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+
+const response = await fetch("https://co.pageover.org/api/headermenu");
+const data = await response.json();
+
+const titles = data.map((item) => item.title_1);
+
+console.log(titles);
+---
+
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">{SITE_TITLE}</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <HeaderLink class="nav-link" href="/">Главная</HeaderLink>
+          </li>
+          <li class="nav-item">
+            <HeaderLink class="nav-link" href="/about">О компании</HeaderLink>
+          </li>
+          <li class="nav-item dropdown">
+            <HeaderLink
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Услуги
+            </HeaderLink>
+            <ul class="dropdown-menu">
+              <li>
+								<HeaderLink class="dropdown-item" href="#">Проектирование</HeaderLink>
+              </li>
+              <li>
+								<HeaderLink class="dropdown-item" href="#">Монтаж и техническое обслуживание</HeaderLink>
+							</li>
+							<li>
+								<HeaderLink class="dropdown-item" href="#">Противопожарная защита</HeaderLink>
+							</li>
+							<li>
+								<HeaderLink class="dropdown-item" href="#">Электрика</HeaderLink>
+							</li>
+							<li>
+								<HeaderLink class="dropdown-item" href="#">Система контроля и управления доступом</HeaderLink>
+							</li>
+							<li>
+								<HeaderLink class="dropdown-item" href="#">Структурированные кабельные сети</HeaderLink>
+							</li>
+							<li>
+								<HeaderLink class="dropdown-item" href="#">Структурированные кабельные сети</HeaderLink>
+							</li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <HeaderLink class="nav-link" href="/contacts">Контакты</HeaderLink>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h2></h2>
+    <div class="internal-links"></div>
+  </nav>
+</header>
