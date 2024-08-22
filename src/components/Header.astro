@@ -12,11 +12,14 @@ console.log(titles);
 
 <header>
   <nav
-    class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+    class="navbar navbar-expand-lg bg-secondary border-bottom border-body"
     data-bs-theme="dark"
   >
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/opb158">{SITE_TITLE}</a>
+    <div class="container">
+      <a class="navbar-brand" href="/opb158">
+        <img class="me-3" src="logo.png" alt="logo" />
+        {SITE_TITLE}</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -29,7 +32,7 @@ console.log(titles);
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
           <li class="nav-item">
             <HeaderLink class="nav-link" href="/opb158">Главная</HeaderLink>
           </li>
