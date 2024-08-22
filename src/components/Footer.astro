@@ -2,31 +2,48 @@
 const today = new Date();
 ---
 
-<footer style="background-color: #F5F5F5;">
-  <div class="container-fluid p-3">
-    <p class="text-center">
-      &copy; {today.getFullYear()} ООО «Обеспечение пожарной безопасности»
-    </p>
+<footer class="p-4 bg-dark text-white-50">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="d-flex">
+          <img id="logo" class="me-3" src="/opb158/logo.png" alt="logo" />
+          <h5 class="mt-2">ООО «ОПБ»</h5>
+        </div>
+        <p class="fw-lighter mt-2">
+          г. Пенза ул. Малая Бугровка 10А, помещение № 1
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-warning">Компания</h6>
+        <ul>
+          <li><a href="/opb158/about">О нас</a></li>
+          <li><a href="/opb158/services">Услуги</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-warning">Информация</h6>
+        <ul>
+          <li><a href="/opb158/details">Реквизиты</a></li>
+          <li><a href="/opb158/gallery">Фотогалерея</a></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li><a href="tel: +7-902-354-34-34">тел.: 8-(8412)-72-34-34</a></li>
+          <li><a href="tel: +7-902-354-34-34">+7-902-354-34-34</a></li>
+          <li>
+            <a class="mt-4" href="mailto:opb158@gmail.com">opb158@gmail.com</a>
+          </li>
+          <li><a href="/sitemap">Карта сайта</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <p class="text-center mt-2 fw-lighter text-small">
+        &copy; {today.getFullYear()} ООО «Обеспечение пожарной безопасности»
+      </p>
+    </div>
   </div>
 </footer>
-<!-- <style>
-	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
-	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
-	}
-	.social-links a {
-		text-decoration: none;
-		color: rgb(var(--gray));
-	}
-	.social-links a:hover {
-		color: rgb(var(--gray-dark));
-	}
-</style> -->
