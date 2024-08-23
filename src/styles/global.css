@@ -1,11 +1,13 @@
-footer #logo 
-{
+footer {
+  border-top: solid 3px #0D6EFD;
+}
+
+footer #logo {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 
-footer a 
-{
+footer a {
   text-decoration: none;
   color: whitesmoke;
 }
@@ -21,4 +23,13 @@ footer li {
 
 .text-small {
   font-size: .8rem;
+}
+
+#logo {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+#logo:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

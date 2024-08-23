@@ -5,6 +5,8 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 
+import ResolutionComponent from "../components/ResolutionComponent.astro";
+
 // type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
@@ -18,7 +20,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   <body class="d-flex flex-column min-vh-100">
     <Header />
     <main>
-      <div class="container mt-4 mb-4">
+
+      <ResolutionComponent />
+
+      <div class="mt-4 mb-4">
         <slot />
       </div>
     </main>

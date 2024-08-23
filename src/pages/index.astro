@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Carousel from "../components/Carousel.astro";
 
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
@@ -11,6 +12,7 @@ const title = "Главная";
 
 <MainLayout title={title} description="Главная описание">
   <h1>{title}</h1>
+  <Carousel />
   <h2>Lorem ipsum dolor</h2>
   <p>
     Sed dignissim condimentum turpis. Quisque et odio nisl. Proin finibus nunc
