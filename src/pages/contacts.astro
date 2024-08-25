@@ -1,9 +1,22 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import YandexMapComponent from "../components/YandexMapComponent.astro";
 
-const title = "Контакты";
+const title = "Контакты - ООО «ОПБ»";
 ---
 
 <MainLayout title={title} description="Контакты описание">
-  <h1>{title}</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <h1 class="mb-4">Контакты</h1>
+        <h6>г. Пенза ул. Малая Бугровка 10А, помещение № 1</h6>
+        <p>Телефоны: 8-(8412)-72-34-34, +7-902-354-34-34</p>
+        <p>E-mail: <a href="mailto:opb158@gmail.com">opb158@gmail.com</a></p>
+      </div>
+      <div class="col-8">
+        <YandexMapComponent />
+      </div>
+    </div>
+  </div>
 </MainLayout>

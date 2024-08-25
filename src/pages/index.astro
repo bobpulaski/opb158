@@ -1,54 +1,100 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Carousel from "../components/Carousel.astro";
+import CardComponent from "../components/CardComponent.astro";
 
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
-const title = "Главная";
+const title = "Главная - ООО «Обеспечение пожарной безопасности»";
 ---
 
 <MainLayout title={title} description="Главная описание">
-  <h1>{title}</h1>
-  <Carousel />
-  <h2>Lorem ipsum dolor</h2>
-  <p>
-    Sed dignissim condimentum turpis. Quisque et odio nisl. Proin finibus nunc
-    nec faucibus pretium. Integer in sollicitudin quam. Vestibulum ullamcorper
-    dui at massa viverra consectetur. Maecenas et venenatis elit. Curabitur
-    imperdiet pharetra orci eu gravida. Mauris ultricies euismod quam, et cursus
-    ante pellentesque in. Nullam neque mauris, molestie in faucibus sed, sodales
-    in purus. Nulla elit orci, lacinia eget ornare quis, convallis at metus.
-    Maecenas egestas porttitor congue. Morbi in sem neque. Vestibulum fringilla
-    lectus et neque eleifend, a congue sem efficitur. Fusce interdum turpis
-    vulputate tempor pulvinar.
-  </p>
+  <div class="container">
+    <h1 class="text-center">
+      Проектирование, монтаж и техническое обслуживание инженерных систем
+    </h1>
+    <section>
+      <div class="row mt-4">
+        <div class="col-md-12 col-lg-3">
+          <CardComponent
+            title="Проектирование инженерных систем"
+            text="Нужно краткое описание в 3 строчки, чтобы было симметрично"
+            image="https://avatars.mds.yandex.net/i?id=bc2303c1d33e9bc4723b6a263f6d6f2d17c4198a-4634037-images-thumbs&n=13"
+            href="/opb158/services"
+          />
+        </div>
 
-  <img
-    class="img-fluid rounded mx-auto d-block"
-    src="https://fakeimg.pl/650x400/?text=Image"
-  />
-
-  <h3>Nulla vitae arcu vulputate</h3>
-  <p>
-    Duis consequat quam a egestas eleifend. Praesent in posuere mi. In hac
-    habitasse platea dictumst. Praesent sed dolor ipsum. Nunc auctor, nunc sit
-    amet suscipit tristique, orci libero convallis elit, sit amet maximus est
-    quam eget turpis. Integer tristique, magna ac aliquam venenatis, velit nisi
-    maximus turpis, ut tristique tortor orci luctus metus. Duis semper, ex nec
-    pellentesque accumsan, lacus odio iaculis diam, vel aliquet nisi ante sit
-    amet orci. Nullam lobortis mi massa, eu hendrerit sapien maximus quis. Cras
-    nisi nunc, vulputate sed ipsum sit amet, porta posuere augue.
-  </p>
-  <p>
-    Phasellus non erat tempor, consequat augue quis, eleifend massa. Nam
-    tristique, leo nec efficitur iaculis, urna mauris lacinia elit, non
-    tristique turpis magna sed orci. Donec ac velit finibus, molestie dui a,
-    bibendum nunc. Sed lobortis lacus eu est viverra, ac vestibulum purus
-    volutpat. Ut tempus imperdiet libero, id pretium ipsum euismod eget. In
-    ipsum magna, pretium ac nisl eget, aliquam lobortis justo. Morbi risus elit,
-    tempus ut varius eget, dictum vel augue.
-  </p>
+        <div class="col-md-12 col-lg-3">
+          <CardComponent
+            title="Противопожарная защита"
+            text="Система противопожарной защиты- это комплекс технических решений и организационных мер"
+            image="https://avatars.mds.yandex.net/i?id=2690cc3d2467e367fd69b403ac6b4144ba32f110-6490940-images-thumbs&n=13"
+            href="/opb158/services"
+          />
+        </div>
+        <div class="col-md-12 col-lg-3">
+          <CardComponent
+            title="Электромонтажные работы"
+            text="Комплекс строительных работ, осуществляемых при новом строительстве"
+            image="https://yandex-images.clstorage.net/97oaFq371/ca5d26ua7Uc-/0krSYv_RwGZvC2i-FwXcds6Rt79sbmNxqlckGNz1w2Nsb_ZrKY1L00OK4-oMFPRxh4o0nh9WVm1PX0WqO20TbtZuFhbeNAUCbr4oPidV_aMaoKZ6zCuy1Y-SxXgpNZYzahkBXHuLrGUUneEtuISAhSa58ioLVBPNeAkibA9vZJ_D-OFhijPxZYmryz3Hl-yyb-DkSzw5ctOO05fsGzDidLlYYD55eJ81BQwA3nu3NPZG6kH_SyXTHUjYco38PWTuoAnD8tuBADT7yYgv5FXfsS8DxIu8OcNi78M0DonxIYfY6FBsmLhOB7V-MoxbVMclJasATnknAyxqKkBsHw0knGI4U-CaQhN1iNjKX9f0LyI_IwXpzAsywx_xFl27I1NEmkmgTPmabzaE7SFeKXXkp0dIUY56tVKeOkoSz95vdh1Sa5Oi6bKA9clbab9n1R2zTgCk6t3pEsFvomYcqvDCZskZw78YmO0FBWzQHki1NqS3ShGfCUVwH6o4wA3-bSQsg2hiQftgIDW5SehflDaOwx8jNVr_qdGRLfBmDXiQUbY5S2NfSwjMZWeN8T2Kd6VWxckjLnjHcK_KaxBNfR1kfuAIs2JacjKEK2qKbgYFPcBes2QpXusBkV9yJoyb8MI0OQuTzen47RVUnpI-O0ZmtvZIEy0qdEAdKnpADgzPNNwjulGiuyHTB9moWSznhp9AXBFU219r4kKMsVQtylBwVTqaoN8J2j63BF8QvEhF5pd0qWJdaMfQbyraEc3vfcbvwetQEPqjQVdJesk8BdQe047DRMqcK1OQ70AmjepCAYU6ijP8Cdqs1AS9Q33Z5_cm9zlTDGpl4F37ODBv3u9n3CFIQkEpwVNGKutZvEflzvFtckbpjJsiob3jls2rQJHEaQpBnJr4vccWPMPeWgS1R0V4kV97VPNfq4qCHC8s1R9TmqOxemBjpbjoym7ndA3TPgMHiW5rA0N885VvU"
+            href="/opb158/services"
+          />
+        </div>
+        <div class="col-md-12 col-lg-3">
+          <CardComponent
+            title="СКУД (Система контроля и управления доступом)"
+            text="Современные системы и материалы способны обеспечить Ваши объекты"
+            image="https://avatars.mds.yandex.net/i?id=c8102506340f9c73a6953d67a2cc87a420b67605-9065817-images-thumbs&n=13"
+            href="/opb158/services"
+          />
+        </div>
+      </div>
+      <div class="row
+            justify-content-md-center
+            mt-4">
+        <div class="col-lg-8 col-md-12">
+          <h2 class="text-center">
+            Наша задача это — обеспечение объектов качественными и
+            своевременными решениями
+          </h2>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12 col-lg-3">
+          <CardComponent
+            title="Структурированные кабельные сети"
+            text="Структурированная кабельная система- это фундамент инфраструктуры"
+            image="https://avatars.mds.yandex.net/i?id=6c5acb973fdd4aa649e7304f39cfc666626ea7f9ea1c25e8-5435106-images-thumbs&n=13"
+            href="/opb158/services"
+          />
+        </div>
+        <div class="col-md-12 col-lg-3">
+          <CardComponent
+            title="Система видеонаблюдения"
+            text="Система видеонаблюдения- один из ключевых факторов безопасности имущества, в независимости от форм собственности"
+            image="https://avatars.mds.yandex.net/i?id=2263c395aff82d359907b086ff301eccef4ae6c0-4395607-images-thumbs&n=13"
+            href="/opb158/services"
+          />
+        </div>
+        <div class="col-md-12 col-lg-3">
+          <CardComponent
+            title="Система охранной сигнализации"
+            text="Охранная сигнализация- ключевой элемент системы безопасности"
+            image="https://avatars.mds.yandex.net/i?id=6a7b2ef77411f75611baf7c4bc8ad48623823864-12914725-images-thumbs&n=13"
+            href="/opb158/services"
+          />
+        </div>
+        <div class="col-md-12 col-lg-3">
+          <CardComponent
+            title="Система периметральной охранной сигнализации"
+            text="Нужно краткое описание в 3 строчки, чтобы было симметрично"
+            image="https://avatars.mds.yandex.net/i?id=e7338fd4899d1dabcbf52b04bd21a72ad65008cde2b3e0b2-5240525-images-thumbs&n=13"
+            href="/opb158/services"
+          />
+        </div>
+      </div>
+    </section>
+  </div>
 </MainLayout>

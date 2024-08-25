@@ -2,7 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import DetailsComponent from "../components/DetailsComponent.astro";
 
-const title = "Реквизиты";
+const title = "Реквизиты - ООО «ОПБ»";
 ---
 
 <MainLayout title={title} description="Описание реквизиты">
@@ -14,7 +14,11 @@ const title = "Реквизиты";
         <DetailsComponent />
       </div>
       <div class="col-md-4 text-end">
-        <a href="/opb158/details.pdf" class="btn btn-primary ms-auto" role="button">Скачать PDF</a>
+        <a
+          href="/opb158/details.pdf"
+          class="btn btn-primary ms-auto"
+          role="button">Скачать PDF</a
+        >
       </div>
     </div>
   </div>

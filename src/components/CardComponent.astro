@@ -1,5 +1,16 @@
+---
+const { title } = Astro.props;
+const { text } = Astro.props;
+const { image } = Astro.props;
+const { href } = Astro.props;
+---
+
 <div class="card">
+  <a href={href}>
+    <img src={image} class="card-img-top" alt={title} />
+  </a>
   <div class="card-body">
-    This is some text within a card body.
+    <h5>{title}</h5>
+    <p class="card-text">{text}</p>
   </div>
 </div>
